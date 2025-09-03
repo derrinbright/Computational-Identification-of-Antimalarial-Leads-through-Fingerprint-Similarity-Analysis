@@ -48,7 +48,7 @@ Using the KNIME platform enables reproducible, scalable, and visual bioinformati
 ### Phase 3: Visualization and Analysis  
 Visualized the entire set of similarity scores with the **HeatMap (JFreeChart)** node, allowing quick identification of molecules with varying levels of structural similarity to the query.  
 
-<img src="images/Heatmap Representation of Molecules Similar to the Query Molecule.jpg" width="600"/>  
+<img src="images/Heatmap Representation of Molecules Similar to the Query Molecule.jpg" width="450"/>  
 
 *Heatmap displaying similarity scores (Tanimoto coefficients) of library molecules versus chloroquine.*  
 
