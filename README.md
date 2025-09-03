@@ -37,12 +37,18 @@ Using the KNIME platform enables reproducible, scalable, and visual bioinformati
    - Candidate library: large chemical compound dataset  
 2. Converted SDF molecules to computational objects using **RDKit From Molecule** nodes for downstream processing.  
 
+<img src="images/Cheminformatics Analysis using KNIME.jpg" width="600"/>  
+*Automated cheminformatics workflow constructed in KNIME.*  
+
 ### Phase 2: Fingerprinting and Similarity Calculation  
 1. Generated molecular fingerprints with **RDKit Fingerprint** nodes to digitally encode each molecule's structure.  
 2. Computed pairwise Tanimoto similarity scores between chloroquine and every molecule in the library using the **Fingerprint Similarity** node.  
 
 ### Phase 3: Visualization and Analysis  
 Visualized the entire set of similarity scores with the **HeatMap (JFreeChart)** node, allowing quick identification of molecules with varying levels of structural similarity to the query.  
+
+<img src="images/Heatmap Representation of Molecules Similar to the Query Molecule.jpg" width="600"/>  
+*Heatmap displaying similarity scores (Tanimoto coefficients) of library molecules versus chloroquine.*  
 
 ---
 
@@ -59,15 +65,5 @@ This outcome highlights the uniqueness of chloroquine's chemical scaffold relati
 This project successfully implemented a **full cheminformatics workflow** in KNIME for molecular similarity screening and demonstrated that the chosen chemical library contains few compounds structurally related to chloroquine.  
 
 The approach illustrates how KNIME can be leveraged for rapid, automated similarity searches in drug discovery pipelines, providing a reproducible and visual analytic platform to prioritize candidates for further study.  
-
----
-
-## Workflow Visualizations  
-
-<img src="images/Cheminformatics Analysis using KNIME.jpg" width="600"/>  
-*Automated cheminformatics workflow constructed in KNIME.*  
-
-<img src="images/Heatmap Representation of Molecules Similar to the Query Molecule.jpg" width="600"/>  
-*Heatmap displaying similarity scores (Tanimoto coefficients) of library molecules versus chloroquine.*  
 
 ---
